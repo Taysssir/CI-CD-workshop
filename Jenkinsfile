@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Cloning') {
             steps {
-                sh "https://github.com/contentful/the-example-app.nodejs.git"
+                sh "git clone https://github.com/contentful/the-example-app.nodejs.git"
             }
         }
         stage('Dependencies installation') {
