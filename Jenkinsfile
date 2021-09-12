@@ -4,7 +4,6 @@ pipeline {
         stage('Cloning') {
             steps {
                 sh "git clone https://github.com/contentful/the-example-app.nodejs.git"
-                sh "cd the-example-app.nodejs"
             }
         }
         stage('Dependencies installation') {
