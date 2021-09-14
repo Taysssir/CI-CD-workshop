@@ -20,8 +20,10 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-
-                sh 'npm start'
+                dir("the-example-app.nodejs") {
+                    sh "pwd"
+                    sh 'npm start'
+                    }
             }
         }
     }
