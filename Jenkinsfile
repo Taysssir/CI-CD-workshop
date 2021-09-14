@@ -20,6 +20,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
+                sh 'cd cd the-example-app.nodejs'
                 sh 'npm start'
             }
         }
