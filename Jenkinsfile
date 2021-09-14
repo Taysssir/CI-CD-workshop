@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Dependencies installation') {
             steps {
-                sh 'cd the-example-app.nodejs'
+                sh 'cd the-example-app.nodejs/'
                 sh 'npm install'
             }
         }
