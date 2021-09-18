@@ -22,7 +22,8 @@ pipeline {
             steps {
                 dir("the-example-app.nodejs") {
                     sh "pwd"
-                    sh 'npm start'
+                    sh 'npm run start:dev'
+
                     }
             }
         }
